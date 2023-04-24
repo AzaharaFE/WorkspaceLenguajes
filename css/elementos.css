@@ -46,6 +46,7 @@
 }
 
 .principal {
+    overflow: scroll;
     text-align: left;
     width: 60%;
     background-color:aquamarine;
@@ -56,6 +57,7 @@
   }
   
 .secundario {
+    overflow: scroll;
     text-align: center;
     width: 40%;
     background-color: #f1c40f;
