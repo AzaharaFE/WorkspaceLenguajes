@@ -56,18 +56,20 @@
   }
   
 .secundario {
+    display: block;
     overflow: visible; 
     text-align: center;
     width: 40%;
-    background-color: #f1c40f;
-    color: white;
+    background-color: #f8f3dd;
+    color: rgb(0, 0, 0);
 
 }
 
 .pie{
-    display: flex;
-    background-color: rgb(52, 224, 240);
-    height: 140px;
+    padding: 10px;
+    text-align: center;
+    background-color:lightgrey;
+    height: 120px;
     border-top-style: ridge;
     border-bottom-style: ridge;
     border-color: black;
