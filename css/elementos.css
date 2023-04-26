@@ -45,7 +45,7 @@
 }
 
 .principal {
-    overflow: visible;
+    overflow: auto;
     text-align: left;
     width: 60%;
     background-color:aquamarine;
@@ -58,7 +58,7 @@
 .secundario {
     padding:10px;
     display: block;
-    overflow: visible; 
+    overflow: auto; 
     text-align: center;
     width: 40%;
     background-color: #f8f3dd;
