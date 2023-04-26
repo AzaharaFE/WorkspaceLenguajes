@@ -56,6 +56,7 @@
   }
   
 .secundario {
+    padding:10px;
     display: block;
     overflow: visible; 
     text-align: center;
@@ -73,4 +74,74 @@
     border-top-style: ridge;
     border-bottom-style: ridge;
     border-color: black;
+}
+
+.sectionheader{
+    background-color: rgba(195, 52, 0, 0.631);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    font-weight: bold;
+}
+
+.sectionarticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.articlecontent{
+    margin:20px;
+    width: 30%;
+    height: 70%;
+    border-radius: 30px;
+    position: relative;
+    top:30px;
+    background-color: rgba(248, 214, 127, 0.886);
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.contentheader{
+    overflow: hidden;
+    text-size-adjust: 100%;
+    max-height: 100%;
+    display:flex;
+    width: 100%;
+    height: 15%;
+    border-bottom: 3px rgb(0, 0, 0) solid;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 23px;
+    max-height: 200%;
+    background-color: antiquewhite;
+    text-align: left;
+    height: 70%;
+    overflow: auto;
+  }
+
+.content ul li{
+    padding: 3px;
+}
+
+.contentfooter{
+    overflow: auto;
+    background-color: rgb(255, 140, 0);
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    border-top: 3px black solid;
+    font-weight: bold;
+    color: #f8f3dd;
 }
