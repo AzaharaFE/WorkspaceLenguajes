@@ -260,3 +260,13 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.menudisp {
+    text-align:center;
+}
+
+@media (max-width: 1067px) {
+    .menudisp {
+        display: none;
+    }
+}
