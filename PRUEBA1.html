@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/elementos.css">
+</head>
+<body>
+    <header><h1 class="titulo">Contacto</h1></header>
+
+    <nav class="nav">
+        <div style="text-align:center;">
+        <p class="parrafo_inlineblock menu"><a href="Home.html">Home</a></p>   
+        <p class="parrafo_inlineblock menu"><a href="QuienesSomos.html">Quienes somos</a></p>
+        <p class="parrafo_inlineblock menu"><a href="AreasDeActuacion.html">Áreas de actuación</a></p>
+        </div>
+    </nav>
+        <section style="text-align: left;">
+            <header><h2>FORMULARIO DE CONSULTA</h2></header>            
+            <form action="procesarPeticion.jsp" method="post">
+                <fieldset style="background-color: rgb(31, 111, 136);">
+                 <legend style="border-style: ridge; background-color: white;">Datos del titular:</legend>
+                    <table>
+                         <tr>
+                            <td><label for="Apellidos:">Apellidos: </label></td>
+                            <td><label for="Nombre:">Nombre: </label></td>
+                            <td><label for="DNI:">DNI: </label></td>
+                            <td><label for= "Fechanacimiento (dd/mm/aaaa):" >Fecha Nacimiento: </label></td>
+                            </tr>
+                        <tr>
+                            <td><input type="text" name="Apellidos:" style="width: 250px;" autofocus/></td>
+                            <td><input type="text" name="Nombre:" style="width: 160px;"required/></td>
+                            <td><input type="text" name="DNI:" style="width: 120px;" required/></td>
+                            <td><input type="date" name="Fecha nacimiento (dd/mm/aaaa):" style="width: 130px;"/></td>
+                    <table>
+                         <tr>
+                            <td><label for="Domicilio:">Domicilio: </label></td>
+                            <td><label for="Localidad:">Localidad: </label></td>
+                            <td><label for="CódigoPostal:">C.P: </label></td>
+                            <td><label for="Nacionaliad">Nacionalidad: </label></td>
+                            </tr>
+                            
+                            <td><input type="text" name="Domicilio:" style="width: 250px;"/></td>
+                            <td><input type="text" name="Localidad:" style="width: 220px;"/></td>
+                            <td><input type="text" name="C.P:" style="width: 100px;"/></td>
+                            <td><input type="text" name="Nacionalidad:"/></td>
+                     <table>
+                        <tr>
+                            <td><label for="Teléfono:">Teléfono Fijo: </label></td> 
+                            <td><label for="Móvil:">Teléfono Móvil: </label></td> 
+                            </tr>
+                        <tr>
+                            <td><input type="tel" name="Teléfono Fijo:" style="width: 120px;"/></td>
+                            <td><input type="tel" name="Teléfono Móvil:" style="width: 120px;"/></td>
+                         </tr>
+                    </table>
+                    <br/>
+            </fieldset>
+                <fieldset style="background-color: rgb(31, 111, 136);">
+                    <legend style="border-style: ridge; background-color: white;">Datos de Usuario:</legend>
+                    <table>
+                        <tr>
+                            <td><label for="user">Nombre de usuario</label></td>
+                            <td><label for="email">Correo electrónico</label></td>
+                            </tr>
+                         <tr>
+                                <td><input type="text" name="user" placeholder="Escribe el nombre" style="width: 200px;" required/></td>
+                                <td><input type="email" name="email" placeholder="Dirección de correo electrónico" style="width: 200px;" required/></td>
+                        <table>
+                            <tr>
+                                <td><label for="password">Contraseña</label></td>
+                                <td><label for="confirm_password">Confirmar contraseña</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" name="password" placeholder="Mínimo 5 caracteres" style="width: 200px;" required minlength="8"/></td>
+                                <td><input type="password" name="confirm_password" placeholder="Repita su contraseña" style="width: 200px;" required minlength="8"/></td>
+                            </tr>
+                    </table>
+                    <br/>
+            </fieldset>
+                <fieldset style="background-color: rgb(31, 111, 136);">
+                    <legend style="border-style: ridge; background-color: white;">Datos Bancarios:</legend>
+                        <label for="datosbancarios">Nº Cuenta:</label>
+                        <input type="text" name="Nº Cuenta:"style="width: 257px;" />
+                    <br/>
+                    <br/>
+                        <label for="Titular:">Titular de la cuenta: </label>
+                        <input type="text" name="Titular de la cuenta:"placeholder="Nombre del titular" style="width: 200px;"/>
+                    <br/>
+            </fieldset>
+                <fieldset style="background-color: rgb(31, 111, 136);">
+                    <legend style="border-style: ridge; background-color: white;">Catálogo de Servicios:</legend>
+                        <br/>   
+                    <label for="serviciosofertados">Servicio sobre el que desea recibir información:</label>
+                    <select name="serviciosofertados">
+                        <option value="-">---Seleccione uno---</option>
+                        <option value="P">Préstamos</option>
+                        <option value="T">Transferencias</option>
+                        <option value="PP">Planes de pensiones</option>
+                        <option value="R">Domiciliar recibos</option>
+                        <option value="TC">Tarjetas de crédito</option>
+                        <option value="H">Hipotécas</option>
+                        <option value="O">Otros</option>
+                    </select>
+                    <br />
+            </fieldset>
+                <fieldset style="background-color: rgb(31, 111, 136);">
+                    <legend style="border-style: ridge; background-color: white;">Observaciones:</legend>
+                    <br/> 
+                        <label for="Motivoconsulta"> Escriba el motivo de su consulta: </label>
+                    <br/>	
+                <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
+            </fieldset>
+                <fieldset style="background-color: rgb(31, 111, 136);">
+                    <legend style="border-style: ridge; background-color: white;">Comunicación:</legend>
+                     <br/> 
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod enim diam, nec blandit nibh sodales et.
+                     Etiam interdum, dui in facilisis convallis, arcu diam hendrerit tortor, id imperdiet metus justo suscipit tellus.
+                     Integer aliquet ipsum dui, vitae sagittis ligula mollis dictum. 
+                     <br/>
+                     <br/>
+                        <label for="terminos">¿Acepta los terminos de uso? </label>
+                    <br/>	
+                    He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" required/>
+                    <br/>	
+                    <br/>
+                        <input type="submit" value="Enviar datos" />
+                        <input type="reset" value="Limpiar formulario" />
+                </fieldset>
+            </form>
+        </section>
+    
+<footer class="pie">
+
+<h3>Trabajo realizado por:</h3>
+<ul>
+    <li>Azahara Fonseca Escudero</li>
+    <li>Alfonso Lobato de la Sierra</li>
+    <li>Alejandro Martín Fernández Prieto</li>
+</ul>
+</footer>
+
+
+                        
+            
+
+           
