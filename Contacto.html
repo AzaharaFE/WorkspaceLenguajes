@@ -9,265 +9,237 @@
 </head>
 <body>
     
-        <header><h1 class="titulo">Contacto</h1></header>
+    <header class="titulo">
+        <img id="logo" src="img/logo.png" alt="Logo" title="logo" style="height: 100px; float: left;"/>
+        <h1 style="text-align: center; margin: 0 auto; font-family:Georgia, 'Times New Roman', Times, serif; text-decoration: underline;">Senior Bank</h1>
+        <img id="rrss" src="img/rrss.png" alt="rrss" title="rrss" style="height: 100px; float: right;"/>
+    </header>
 
-        <nav class="nav">
+    <nav class="nav">
+        <ul class="menu-desplegable">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Menú</a>
+                <div class="dropdown-content">
+                    <a href="Home.html">Home</a>
+                    <a href="QuienesSomos.html">Quienes somos</a>
+                    <a href="AreasDeActuacion.html">Áreas de actuación</a>
+                    <a href="Contacto.html">Contacto</a>
+                    <a href="Home.html">Noticias</a>
+                    <a href="Home.html">Publicaciones</a>
+                    <a href="Home.html">Localización</a>
+                </div>
+        </ul>
             <div style="text-align:center;">
-            <p class="parrafo_inlineblock menu"><a href="Home.html">Home</a></p>   
-            <p class="parrafo_inlineblock menu"><a href="QuienesSomos.html">Quienes somos</a></p>
-            <p class="parrafo_inlineblock menu"><a href="AreasDeActuacion.html">Áreas de actuación</a></p>
+                <p class="parrafo_inlineblock menu"><a href="Home.html">Home</a></p>
+                <p class="parrafo_inlineblock menu"><a href="QuienesSomos.html">Quienes somos</a></p>
+                <p class="parrafo_inlineblock menu"><a href="AreasDeActuacion.html">Áreas de actuación</a></p>
+                <p class="parrafo_inlineblock menu"><a href="Contacto.html">Contacto</a></p>
+                <p class="parrafo_inlineblock menu">Noticias</p>
+                <p class="parrafo_inlineblock menu">Publicaciones</p>
+                <p class="parrafo_inlineblock menu">Localización</p>
             </div>
         </nav>
-        <section style="text-align: center;">
-            <header><h2>Titulo</h2></header>
-            <article><p>texto</p></article>
+        
+        <section style="text-align: left;">
+            
+            <header>
+                <h2 style="text-decoration: underline; text-align: center;">Contacto</h2>
+                <h2>Formulario de registro:</h2>
+            </header>            
             <form action="procesarPeticion.jsp" method="get">
-                <!--
-                    Nuevos atributos
-                    ----------------
-                    placeholder, Un texto que se muestra sobre un campo de texto para guiar 
-                    al usuario. Este texto desaparece cuando escribimos algo en él.
-                -->
-                <input type="text" name="edad" placeholder="Escribe tu edad" />	
-                <br/>
-                <br/>
-                <!--
-                    El campo al que se le añade el atributo "autofocus" será el que esté seleccionado por 
-                    defecto al cargar la página, es decir, tendrá el cursor.
-                -->
-                Nombre: <input type="text" name="nombre" autofocus/>
-                <br/>
-                <br/>
-                <!--
-                   required, hace que el campo al que se le aplica sea obligatorio. No se podrá enviar 
-                   el formulario sin rellenarlo.
-                -->
-                Apellidos: <input type="text" name="apellidos" required/>
-                <br/>
-                <br/>
-                <!-- 
-                    Nuevos tipos de campos
-                    ----------------------
-        
-                    Se trata de valores nuevos del atributo "type" que nacieron en HTML5 
-                    Solo son compatibles con navegadores que soprtan HTML5, que son todos en la actualidad,
-                    pero ojo, que pueden que dichos valores no funcionan con los navegadores más antiguos.
-                    En caso de que el navegador no soporte los tipos, los tratará como "text".
-        
-                    El navegador validará la entrada de estos campos antes de enviar los datos al servidor.
-        
-                    Vamos a ver algunos de los más importantes
-                -->
-               
-                <!--
-                    1) email, Campo que admite una dirección de correo electrónico (e-mail). Si le ponemos
-                    el atributo "required" la dirección email debera de tener un formato correcto 
-                    "nombre@correo"
-                -->
-                Email: <input type="email" name="email" required/>
-        
-                <!--
-                    2) number, Campo que solo admite números. Podemos configurarlo con los siguientes
-                    atributos:
-        
-                        a) min, valor mínimo aceptado
-                        b) max, valor máximo aceptado
-                        c) step, es el valor que se suma y resta al utilizar los botones del slider.
-                        Ojo, el número que podemos enviar debe de ser multiplo de step
-                -->
-                <br/>
-                <br/>
-                Edad: <input type="number" min="18" max="120" step="5" name="edadNumber" 
-                        placeholder="Edad" required/>
-            
-                <!--
-                    3) tel, campo que solo admite números de teléfono
-                -->
-                <br/>
-                <br/>
-                Teléfono: <input type="tel" name="telefono" placeholder="Escribe su número de telefono"/>
-            
-                <!--
-                    4) url, solo admite una URL en el formato correcto.
-                -->
-                <br/>
-                <br/>
-                <input type="url" name="url" placeholder="Escribe su url"/>
-        
-                <!--
-                    5) color, despliega colores para elegir
-                -->
-                <br/>
-                <br/>
-                <input type="color" name="color"/>
-        
-                <!--
-                    6) date, despliega un calendario
-                -->
-                <br/>
-                <br/>
-                <input type="date" name="color"/>
-        
-                <br/>
-                <br/>
-                <input type="submit" value="Enviar"/>
-                <fieldset>
-                    <legend>Datos personales:</legend>
-                    <!--
-                        <label> Define una etiqueta estática, que normalmente estará asociada con un elemento 
-                        de campo de formulario que se identifica mediante el atributo "for". El valor del
-                        atributo "for" se iguala al valor del atributo "id" del elemento del formulario
-                    -->
-                    <label for="nombre">Nombre: </label>
-                    <!--
-                        La etiqueta <input> define un elemento de campo de texto de formulario. Estos son 
-                        sus atributos más comunes:
-        
-                        1) type: tipo de campo. El valor más usual es text (caja de texto).
-        
-                        2) name: el nombre de este atributo. Será el que usará el servidor para 
-                        recuperar el valor del campo. Será como se enviará al servidor con la pareja
-                        "name=value"
-        
-                        3) value: valor que tomará el campo.
-        
-                        4) readonly: solo lectura. No puede ser modificado por el usuario. 
+                <fieldset style="background-color: aquamarine;">
+                    <legend style="border-style: ridge; background-color: white;">Datos personales:</legend>
+                    <table>
+                        <tr>
+                            <td><label for="nombre">Nombre</label></td>
+                            <td><label for="primerapellido">Primer apellido</label></td>
+                            <td><label for="segundoapellido">Segundo apellido</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="nombre" required/></td>
+                            <td><input type="text" name="primerapellido" required/></td>
+                            <td><input type="text" name="segundoapellido" required/></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table>
+                        <tr>
+                            <td><label for="dni">DNI</label></td>
+                            <td><label for="paisnacimiento">País de nacimiento</label></td>
+                            <td><label for="fechanacimiento">Fecha de nacimiento</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="dni" required/></td>
+                            <td><input type="text" name="paisnacimiento" required/></td>
+                            <td><input type="date" name="fechanacimiento" required/></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table>
+                        <tr>
+                            <td><label for="domicilio">Domicilio (Calle, portal y piso)</label></td>
+                            <td><label for="provincia">Provincia</label></td>
+                            <td><label for="localidad">Localidad</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="domicilio" style="width: 300px;" required/></td>
+                            <td><select name="provincia" required>
+                                <option value="">Selecciona una provincia</option>
+                                <option value="Álava">Álava</option>
+                                <option value="Albacete">Albacete</option>
+                                <option value="Alicante">Alicante</option>
+                                <option value="Almería">Almería</option>
+                                <option value="Asturias">Asturias</option>
+                                <option value="Ávila">Ávila</option>
+                                <option value="Badajoz">Badajoz</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="Cáceres">Cáceres</option>
+                                <option value="Cádiz">Cádiz</option>
+                                <option value="Cantabria">Cantabria</option>
+                                <option value="Castellón">Castellón</option>
+                                <option value="Ceuta">Ceuta</option>
+                                <option value="Ciudad Real">Ciudad Real</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cuenca">Cuenca</option>
+                                <option value="Girona">Girona</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Guadalajara">Guadalajara</option>
+                                <option value="Guipúzcoa">Guipúzcoa</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Huesca">Huesca</option>
+                                <option value="Illes Balears">Illes Balears</option>
+                                <option value="Jaén">Jaén</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Las Palmas">Las Palmas</option>
+                                <option value="León">León</option>
+                                <option value="Lleida">Lleida</option>
+                                <option value="Lugo">Lugo</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Málaga">Málaga</option>
+                                <option value="Melilla">Melilla</option>
+                                <option value="Murcia">Murcia</option>
+                                <option value="Navarra">Navarra</option>
+                                <option value="Ourense">Ourense</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Pontevedra">Pontevedra</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Sevilla">Sevilla</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Tarragona">Tarragona</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Toledo">Toledo</option>
+                                <option value="Valencia">Valencia</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Vizcaya">Vizcaya</option>
+                                <option value="Zamora">Zamora</option>
+                                <option value="Zaragoza">Zaragoza</option>
+                              </select>
+                              </td>
+                            <td><input type="text" name="localidad" required/></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table>
+                        <tr>
+                            <td><label for="codigopostal">Código Postal</label></td>
+                            <td><label for="telefono">Teléfono</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="codigopostal" required pattern="[0-9]{5}"/></td>
+                            <td><input type="tel" name="telefono" required/></td>
+                        </tr>
+                    </table>
+                    <br/>
+                </fieldset>
+                <fieldset style="background-color: rgb(186, 243, 224);">
+                    <legend style="border-style: ridge; background-color: white;">Nivel de estudios:</legend>
+                        <label for="nivelestudios">Indique su nivel de estudios:</label>
+                        <br/>	
+                        <br/>
+                        <input type="radio" name="nivelestudios" value="S"/>Sin estudios<br/>
+                        <input type="radio" name="nivelestudios" value="E"/>Educación Secundaria Obligatoria (ESO)<br/>	
+                        <input type="radio" name="nivelestudios" value="B"/>Bachillerato<br/>	
+                        <input type="radio" name="nivelestudios" value="FP1"/>Formación Profesional de Grado Medio (FP)<br/>	
+                        <input type="radio" name="nivelestudios" value="FP2"/>Formación Profesional de Grado Superior (FP)<br/>
+                        <input type="radio" name="nivelestudios" value="U"/>Estudios Universitarios<br/>
+                        <br/>
+                </fieldset>
+                <fieldset style="background-color: rgb(247, 160, 160);">
+                    <legend style="border-style: ridge; background-color: white;">Registro en la plataforma:</legend>
+                    
+                        <label for="user">Nombre de usuario:</label>
                         
-                        Además, si hay un label con el atributo "for" con el valor del "id" de un input, 
-                        cuando pinchemos en ese label nos hara focus a dicho "input"
-                    -->
-                    <input id="nombre" type="text" name="nombre" value="Tony Stark"/>
+                        <br/>
+                        <input type="text" name="user" required/>
+                        <br/>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td><label for="password">Contraseña</label></td>
+                                <td><label for="confirm_password">Confirmar contraseña</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" name="password" placeholder="Debe contener al menos 8 dígitos" style="width: 200px;" required minlength="8"/></td>
+                                <td><input type="password" name="confirm_password" placeholder="Repita su contraseña" style="width: 200px;" required minlength="8"/></td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <label for="email">Correo electrónico</label>
+                        <br/>
+                        <input type="email" name="email" required>
+                        <br/>
+                </fieldset>
+                <fieldset style="background-color: rgb(177, 212, 245);">
+                    <legend style="border-style: ridge; background-color: white;">Servicios:</legend>
+                    <label for="servicios">¿En qué servicios está interesado? </label>
+                    <br/>	
+                    <br/>	
+                    <input type="checkbox" name="servicios" value="CB" checked/>Cuentas bancarias<br/>	
+                    <input type="checkbox" name="servicios" value="P" />Préstamos<br/>	
+                    <input type="checkbox" name="servicios" value="T" />Tarjetas de crédito y débito<br/>	
+                    <input type="checkbox" name="servicios" value="BLM" />Banca en línea y móvil<br/>
+                    <input type="checkbox" name="servicios" value="I" />Inversión<br/>
+                    <input type="checkbox" name="servicios" value="ME" />Cambio de moneda extranjera<br/>	
+                    <input type="checkbox" name="servicios" value="S" />Seguros<br/>	
+                    <input type="checkbox" name="servicios" value="P" />Gestión de patrimonio<br/>	
+                    <input type="checkbox" name="servicios" value="PP" />Planes de pensiones<br/>
+                    <br/>	
+                </fieldset>
+                <fieldset style="background-color: rgb(247, 164, 233);">
+                    <legend style="border-style: ridge; background-color: white;">Valoración y observaciones</legend>
+                    <label for="valoracion">Valore nuestros servicios en una escala de 1 a 10: </label>
+                    <input type="number" min="1" max="10" step="1" name="valoracion" required/>
                     <br/>
-                    <label for="edad">Edad: </label>
-                    <input id="edad" type="text" name="edad" />
-                    <br/>
-                    <!-- 
-                        <input type=”password”>, lo que hacemos es ocultar a otros usuarios la información
-                        que escribamos en este campo
-                    -->
-                    <label for="pass">Password: </label>
-                    <input id="pass" type="password" name="pass" />
-                    <!-- 
-                        <input type=”hidden”>, Campo oculto. Puede ser útil para enviar una información al 
-                        servidor que no queremos que sea vista por el usuario.
-                    -->
-                    <br/>
-                    <input id="identificador" type="hidden" name="identificador" value="123"/>
-                    <br/>
-                    <!--
-                        input type="radio", Se representa como un botón de radio. 
-                        Todos los botones de radio que tienen el mismo name pertenecen al mismo grupo y 
-                        solamente uno de los elementos del grupo podrá ser seleccionado por el usuario.
-        
-                        El usuario solamente podrá seleccionar uno de los valores preestablecidos. 
-                        La variable que recogerá el programa y enviará al servidor será
-                        estado_civil y el valor enviado será S, C, V o D según el botón de radio seleccionado 
-                        por el usuario.
-        
-                        Con el atributo "checked", podemos poner cual queremos seleccionar por defecto
-                    -->
-                    <label for="estado_civil">Estado civil: </label>
-                    <br />	
-                    <input type="radio" name="estado_civil" value="S" />Soltero<br />	
-                    <input type="radio" name="estado_civil" value="C" />Casado<br />	
-                    <input type="radio" name="estado_civil" value="V" checked/>Viudo<br />	
-                    <input type="radio" name="estado_civil" value="D" />Divorciado<br />	
-        
-                    <!--
-                        input type="checkbox", Similar a type="radio" pero esta vez se permite seleccionar
-                        varias opciones.
-        
-                        También admite el atributo "checked"
-                    -->
-                    <br/>
-                    <label for="hobbies">Hobbies: </label>
-                    <br />	
-                    <input type="checkbox" name="hobbies" value="M" checked/>Música<br />	
-                    <input type="checkbox" name="hobbies" value="L" checked/>Lectura<br />	
-                    <input type="checkbox" name="hobbies" value="D" />Deportes<br />	
-                    <input type="checkbox" name="hobbies" value="V" />Videojuegos<br />	
-                    <br/>
-                    <!--
-                        <select><option>, La etiqueta <select> representa una lista desplegable de opciones 
-                        definidas por medio de etiquetas <option>.
-                        
-                        El texto contenido en cada <option> es el valor visible para el usuario.
-                        
-                        El valor que se enviará al servidor es el que contiene el atributo value de la opción 
-                        seleccionada por el usuario (LUN, MAR, MIE, JUE o VIE).
-        
-                        Por defecto se marcará el primer "option" pero tambien podemos usar el atributo 
-                        "selected" para marcar el que nosotros queramos.
-        
-                        El comportamiento por defecto es muy parecido al del type="radio", solo se puede elegir
-                        uno. Aunque tambien es posible permitir varias opciones con el atributo "multiple"
-                        (no suele ser muy habitual)
-                    -->
-                    <label for="dia_nacimiento">Escoja el día en que nació: </label>
-                    <select name="dia_nacimiento">
-                        <option value="MON">Lunes</option>
-                        <option value="TUE">Martes</option>
-                        <option value="WED" selected>Miércoles</option>
-                        <option value="THU">Jueves</option>
-                        <option value="FRI">Viernes</option>
-                    </select>
-                    <br />
-                    <!--
-                        <textarea>, Se representa como una caja de texto multilínea. Tiene los siguientes 
-                        atributos:
-        
-                            1) rows: número de filas visibles del campo.
-        
-                            2) cols: ancho del campo, numero de caracteres por línea.
-        
-                            3) readonly: solo lectura. (este tambien se puede encontrar en los text y en otros)
-                    -->
                     <br/>
                     <label for="observaciones">Observaciones: </label>
-                    <br />	
-                    <!-- Para evitar que el usuario pueda redimensinar el textarea podemos usar
-                    CSS. Para ello podemos poner el atributo "resize: none;" -->
+                    <br/>
                     <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
-        
-                    <!--
-                        Un checkbox también es común para opciones simples de marcar o desmarcar
-                    -->
-                    <br/>
-                    <br/>
-                    <label for="terminos">¿Acepta los terminos de uso? </label>
-                    <br/>	
-                    He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" />
-                    <br/>	
-                    <!--
-                        input type="submit", Se representa como un botón y cuando el usuario hace clic en él, 
-                        se realiza la petición HTTP al programa de servidor especificado en el atributo action.
-                    -->
-                    <br/>	
-                    <input type="submit" value="Enviar datos" />
-                    <!--
-                        input type="reset", Se representa como un botón y cuando el usuario hace clic en él, 
-                        se deja el formulario en su estado inicial (normalmente vacio)
-                    -->
-                    <input type="reset" value="Limpiar formulario" />
-        
-                    <!-- 
-                        También hay botones normales para dar otro tipo de funcionalidad
-                        Al estar este botón en el formulario, su comportamiento por defecto sería
-                        la misma que la del "input type='submit'""
-                    -->
-                    <button>Boton normal</button>
                 </fieldset>
+                <fieldset style="background-color: rgb(68, 255, 183);">
+                    <legend style="border-style: ridge; background-color: white;">Terminos de uso y enviar formulario</legend>
+                    <label for="terminos">¿Acepta los terminos de uso? </label>
+                    <br/>
+                    He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" required/>
+                    <br/>
+                    <br/>
+                    <input type="submit" value="Enviar datos" />
+                    <input type="reset" value="Limpiar formulario" />
+                </fieldset>
+            </form>
         </section>
-
-    <footer class="pie">
-        
-        <h3>Trabajo realizado por:</h3>
-        <ul>
-            <li>Azahara Fonseca Escudero</li>
-            <li>Alfonso Lobato de la Sierra</li>
-            <li>Alejandro Martín Fernández Prieto</li>
-        </ul>
-    </footer>
+            
+        <footer class="pie">
+            <p style="list-style-type: none; margin: 10px 0; padding: 0; text-align: center;"><u>Trabajo realizado por:</u></p>
+            <ul style="list-style-type: none; margin: 10px 0; padding: 0; text-align: center;">
+              <li style="display: inline-block; margin: 10px;">Azahara Fonseca Escudero</li>
+              <li style="display: inline-block; margin: 10px;">Alfonso Lobato de la Sierra</li>
+              <li style="display: inline-block; margin: 10px;">Alejandro Martín Fernández Prieto</li>
+            </ul>
+            <p style="margin-top: 20px;">Derechos de autor © 2023 - Todos los derechos reservados</p>
+          </footer>
 
 </body>
 </html>

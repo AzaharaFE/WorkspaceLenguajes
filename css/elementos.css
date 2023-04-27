@@ -4,82 +4,259 @@
 
 .parrafo_inlineblock {
     display: inline-block;
-    margin: 0 10px;
-    clear: both;
+    margin: 10px;
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    display: flex;
     position: relative;
-    background-color: rgb(0, 238, 255);
+    background-color: rgb(127, 173, 177);
     height: 100px;
-    top: 0px;
-    left: 0px;
-    margin: 10px;
-    border-style: solid;
+    margin: 0px;
+    overflow: hidden;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
     border-color: black;
 }
 .menu {
-    background-color: rgb(51, 255, 0);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
     text-align: center;
     padding: 5px;
-    border-style: solid;
+    border-style: double;
     border-color: black;
 }
 
 .nav {
     display: flex;
+
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: rgb(255, 0, 0);
+    background-color: burlywood;
     height: 50px;
-    top: 0px;
-    left: 0px;
-    margin: 10px;
-    border-style: solid;
+    border-bottom-style: ridge;
     border-color: black;
 }
 
 .contenedor{
+    z-index: 0;
     display: flex;
-    height: 650px;
-
+    height: 800px;
 }
 
 .principal {
-    text-align: center;
-    flex: 2;
-    background-color: #3498db;
-    color: white;
+    overflow: auto;
+    text-align: left;
+    width: 60%;
+    background-color:aquamarine;
+    color:black;
     display: block;
-    margin-left: 10px;
-    border-style: solid;
+    border-right-style: dashed;
     border-color: black;
-  }
+}
+
+.principalv2 {
+    overflow: auto;
+    text-align: left;
+    background-size: cover;
+    width: 100%;
+    background-color:aquamarine;
+    color:black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-color: black;
+}
   
 .secundario {
+    padding:10px;
+    display: block;
+    overflow: auto; 
     text-align: center;
-    flex: 1;
-    background-color: #f1c40f;
-    color: white;
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 40%;
+    background-color: #f8f3dd;
+    color: rgb(0, 0, 0);
+
 }
 
 .pie{
-    text-align: left;
-    list-style-position: inside;
-    background-color: rgb(11, 123, 215);
-    height: 140px;
-    top: 0px;
-    left: 0px;
-    margin: 10px;
-    border-style: solid;
+    padding: 10px;
+    text-align: center;
+    background-color:lightgrey;
+    height: 120px;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
     border-color: black;
+}
+
+.sectionheader{
+    background-color: rgba(195, 52, 0, 0.631);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    font-weight: bold;
+}
+
+.sectionarticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.articlecontent{
+    margin:20px;
+    width: 30%;
+    height: 70%;
+    border-radius: 30px;
+    position: relative;
+    top:30px;
+    background-color: rgba(248, 214, 127, 0.886);
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.contentheader{
+    overflow: hidden;
+    text-size-adjust: 100%;
+    max-height: 100%;
+    display:flex;
+    width: 100%;
+    height: 15%;
+    border-bottom: 3px rgb(0, 0, 0) solid;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 23px;
+    max-height: 200%;
+    background-color: antiquewhite;
+    text-align: left;
+    height: 70%;
+    overflow: auto;
+  }
+
+.content ul li{
+    padding: 3px;
+}
+
+.contentfooter{
+    overflow: auto;
+    background-color: rgb(255, 140, 0);
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    border-top: 3px black solid;
+    font-weight: bold;
+    color: #f8f3dd;
+}
+
+.sectionform{
+    width: 85%;
+    height: 85%;
+    background-color: rgba(240, 248, 255, 0.758);
+    overflow: auto;
+    border-radius: 20px;
+    border: 3px black solid;
+    justify-content: center;
+}
+
+.sectionformheader{
+    background-color: rgb(176, 41, 41);
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    color:white;
+
+}
+
+.sectionformbody{
+    height: 80%;
+    position: relative; 
+    justify-content: left;
+    font-weight: bold;
+    align-items: center;
+    margin:10px
+}
+
+.menu-desplegable ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    
+}
+
+/* Estilo para los elementos del menú */
+.menu-desplegable li {
+    float: left;
+}
+
+/* Estilo para los enlaces */
+.menu-desplegable li a {
+    display: block;
+    color: rgb(22, 9, 9);
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-style: double;
+    border-color: black;
+    background-color: beige;
+
+
+
+
+}
+
+/* Estilo para los enlaces cuando se coloca el cursor sobre ellos */
+.menu-desplegable li a:hover {
+    background-color: #cce0c8;
+}
+
+/* Estilo para las solapas desplegables */
+.menu-desplegable li.dropdown {
+    display: inline-block;
+}
+
+/* Estilo para el contenido de las solapas desplegables */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Estilo para los enlaces de las solapas desplegables */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Estilo para los enlaces de las solapas desplegables cuando se coloca el cursor sobre ellos */
+.dropdown-content a:hover {
+    background-color: #0a540d;
+}
+
+/* Estilo para mostrar la solapa desplegable cuando se coloca el cursor sobre la solapa */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
