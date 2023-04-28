@@ -11,12 +11,29 @@
     <header><h1 class="titulo">Contacto</h1></header>
 
     <nav class="nav">
-        <div style="text-align:center;">
-        <p class="parrafo_inlineblock menu"><a href="Home.html">Home</a></p>   
-        <p class="parrafo_inlineblock menu"><a href="QuienesSomos.html">Quienes somos</a></p>
-        <p class="parrafo_inlineblock menu"><a href="AreasDeActuacion.html">Áreas de actuación</a></p>
-        </div>
-    </nav>
+        <ul class="menu-desplegable">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Menú</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="QuienesSomos.html">Quienes somos</a>
+                    <a href="AreasDeActuacion.html">Áreas de actuación</a>
+                    <a href="Contacto.html">Contacto</a>
+                    <a href="index.html">Noticias</a>
+                    <a href="index.html">Publicaciones</a>
+                    <a href="index.html">Localización</a>
+                </div>
+        </ul>
+            <div class="menudisp">
+                <p class="parrafo_inlineblock menu"><a href="index.html">Home</a></p>
+                <p class="parrafo_inlineblock menu"><a href="QuienesSomos.html">Quienes somos</a></p>
+                <p class="parrafo_inlineblock menu"><a href="AreasDeActuacion.html">Áreas de actuación</a></p>
+                <p class="parrafo_inlineblock menu"><a href="Contacto.html">Contacto</a></p>
+                <p class="parrafo_inlineblock menu">Noticias</p>
+                <p class="parrafo_inlineblock menu">Publicaciones</p>
+                <p class="parrafo_inlineblock menu">Localización</p>
+            </div>
+        </nav>
         <section style="text-align: left;">
             <header><h2>FORMULARIO DE CONSULTA</h2></header>            
             <form action="procesarPeticion.jsp" method="post">

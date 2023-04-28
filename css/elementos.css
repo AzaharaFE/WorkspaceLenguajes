@@ -260,3 +260,47 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.menudisp {
+    text-align:center;
+}
+
+@media (max-width: 1067px) {
+    .menudisp {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .pie{
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 431px) {
+    .pie{
+        height: 200px;
+    }
+
+}
+
+.formulario2 {
+    text-align:left;
+}
+
+@media (min-width: 720px) {
+    .formulario2 {
+        display: none;
+    }
+}
+
+.formulario1 {
+    text-align:left;
+}
+
+@media (max-width: 719px) {
+    .formulario1 {
+        display: none;
+    }
+}
