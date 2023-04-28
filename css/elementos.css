@@ -284,3 +284,23 @@
     }
 
 }
+
+.formulario2 {
+    text-align:left;
+}
+
+@media (min-width: 720px) {
+    .formulario2 {
+        display: none;
+    }
+}
+
+.formulario1 {
+    text-align:left;
+}
+
+@media (max-width: 719px) {
+    .formulario1 {
+        display: none;
+    }
+}
