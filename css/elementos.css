@@ -44,7 +44,13 @@
 .contenedor{
     z-index: 0;
     display: flex;
-    height: 800px;
+
+}
+
+.contenedorv2{
+    z-index: 0;
+    display: flex;
+
 }
 
 .principal {
@@ -61,17 +67,26 @@
 .principalv2 {
     overflow: auto;
     text-align: left;
-    background-size: cover;
-    width: 100%;
+    width: 60%;
     background-color:aquamarine;
     color:black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    display: block;
+    border-right-style: dashed;
     border-color: black;
 }
   
 .secundario {
+    padding:10px;
+    display: block;
+    overflow: auto; 
+    text-align: center;
+    width: 40%;
+    background-color: #f8f3dd;
+    color: rgb(0, 0, 0);
+
+}
+
+.secundariov2 {
     padding:10px;
     display: block;
     overflow: auto; 
@@ -269,11 +284,33 @@
     .menudisp {
         display: none;
     }
+    .contenedorv2{
+        flex-direction: column;
+    }
+    .principalv2{
+        width: 100%;
+        border-right: none;
+        height:1000px;
+        border-bottom: black dashed 3px;
+
+
+    }
+    .secundariov2{
+        width: auto;
+    }
 }
 
 @media (max-width: 680px) {
     .pie{
         height: 150px;
+    }
+
+    .sectionarticle{
+        flex-direction: column;
+    }
+    .articlecontent{
+        width: 80%;
+
     }
 
 }
@@ -282,7 +319,6 @@
     .pie{
         height: 200px;
     }
-
 }
 
 .formulario2 {
