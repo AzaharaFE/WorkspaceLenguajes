@@ -198,7 +198,6 @@
     margin: 0;
     padding: 0;
     background-color: #333;
-    
 }
 
 /* Estilo para los elementos del menú */
@@ -217,10 +216,6 @@
     border-style: double;
     border-color: black;
     background-color: beige;
-
-
-
-
 }
 
 /* Estilo para los enlaces cuando se coloca el cursor sobre ellos */
